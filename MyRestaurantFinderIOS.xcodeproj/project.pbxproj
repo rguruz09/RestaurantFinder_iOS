@@ -11,7 +11,6 @@
 		860369BC1CF10B770017AA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369BB1CF10B770017AA49 /* ViewController.swift */; };
 		860369BF1CF10B770017AA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860369BD1CF10B770017AA49 /* Main.storyboard */; };
 		860369C11CF10B770017AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860369C01CF10B770017AA49 /* Assets.xcassets */; };
-		860369C41CF10B770017AA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860369C21CF10B770017AA49 /* LaunchScreen.storyboard */; };
 		860369CF1CF10B770017AA49 /* MyRestaurantFinderIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369CE1CF10B770017AA49 /* MyRestaurantFinderIOSTests.swift */; };
 		860369DA1CF10B770017AA49 /* MyRestaurantFinderIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369D91CF10B770017AA49 /* MyRestaurantFinderIOSUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		860369BB1CF10B770017AA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		860369BE1CF10B770017AA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		860369C01CF10B770017AA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		860369C31CF10B770017AA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860369C51CF10B770017AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		860369CA1CF10B770017AA49 /* MyRestaurantFinderIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRestaurantFinderIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860369CE1CF10B770017AA49 /* MyRestaurantFinderIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestaurantFinderIOSTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				860369BB1CF10B770017AA49 /* ViewController.swift */,
 				860369BD1CF10B770017AA49 /* Main.storyboard */,
 				860369C01CF10B770017AA49 /* Assets.xcassets */,
-				860369C21CF10B770017AA49 /* LaunchScreen.storyboard */,
 				860369C51CF10B770017AA49 /* Info.plist */,
 			);
 			path = MyRestaurantFinderIOS;
@@ -229,7 +226,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				860369C41CF10B770017AA49 /* LaunchScreen.storyboard in Resources */,
 				860369C11CF10B770017AA49 /* Assets.xcassets in Resources */,
 				860369BF1CF10B770017AA49 /* Main.storyboard in Resources */,
 			);
@@ -299,14 +295,6 @@
 				860369BE1CF10B770017AA49 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		860369C21CF10B770017AA49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				860369C31CF10B770017AA49 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
