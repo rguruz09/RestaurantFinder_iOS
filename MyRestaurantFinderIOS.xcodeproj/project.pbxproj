@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49675189E4B010D599C3BFC8 /* libPods-MyRestaurantFinderIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DF71CA2D9DF17365063B2 /* libPods-MyRestaurantFinderIOS.a */; };
+		2FC52FDE89323259C6B1ECED /* Pods_MyRestaurantFinderIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5CDDFECB5A03183ABD3750 /* Pods_MyRestaurantFinderIOS.framework */; };
 		860369BA1CF10B770017AA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369B91CF10B770017AA49 /* AppDelegate.swift */; };
 		860369BC1CF10B770017AA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369BB1CF10B770017AA49 /* ViewController.swift */; };
 		860369C11CF10B770017AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860369C01CF10B770017AA49 /* Assets.xcassets */; };
 		860369CF1CF10B770017AA49 /* MyRestaurantFinderIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369CE1CF10B770017AA49 /* MyRestaurantFinderIOSTests.swift */; };
 		860369DA1CF10B770017AA49 /* MyRestaurantFinderIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369D91CF10B770017AA49 /* MyRestaurantFinderIOSUITests.swift */; };
 		860369EA1CF123A10017AA49 /* RestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369E91CF123A10017AA49 /* RestaurantsModel.swift */; };
-		860369EC1CF130170017AA49 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369EB1CF130170017AA49 /* SearchController.swift */; };
 		860369EE1CF133EA0017AA49 /* YelpSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860369ED1CF133EA0017AA49 /* YelpSearch.swift */; };
 		860369F01CF1367B0017AA49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860369EF1CF1367B0017AA49 /* CFNetwork.framework */; };
 		860369F21CF13BEB0017AA49 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 860369F11CF13BEB0017AA49 /* Podfile */; };
+		86A8EB531CF23E3000A9FA65 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8EB521CF23E3000A9FA65 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5CDDFECB5A03183ABD3750 /* Pods_MyRestaurantFinderIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRestaurantFinderIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B89BE011EC770C97A40E6E5 /* Pods-MyRestaurantFinderIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantFinderIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyRestaurantFinderIOS/Pods-MyRestaurantFinderIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		860369B61CF10B770017AA49 /* MyRestaurantFinderIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRestaurantFinderIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		860369B91CF10B770017AA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,11 +52,10 @@
 		860369D91CF10B770017AA49 /* MyRestaurantFinderIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestaurantFinderIOSUITests.swift; sourceTree = "<group>"; };
 		860369DB1CF10B770017AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		860369E91CF123A10017AA49 /* RestaurantsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsModel.swift; sourceTree = "<group>"; };
-		860369EB1CF130170017AA49 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		860369ED1CF133EA0017AA49 /* YelpSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpSearch.swift; sourceTree = "<group>"; };
 		860369EF1CF1367B0017AA49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		860369F11CF13BEB0017AA49 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA7DF71CA2D9DF17365063B2 /* libPods-MyRestaurantFinderIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyRestaurantFinderIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A8EB521CF23E3000A9FA65 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AF5C254D818154C5A41D2A25 /* Pods-MyRestaurantFinderIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRestaurantFinderIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyRestaurantFinderIOS/Pods-MyRestaurantFinderIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860369F01CF1367B0017AA49 /* CFNetwork.framework in Frameworks */,
-				49675189E4B010D599C3BFC8 /* libPods-MyRestaurantFinderIOS.a in Frameworks */,
+				2FC52FDE89323259C6B1ECED /* Pods_MyRestaurantFinderIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +127,8 @@
 				860369C01CF10B770017AA49 /* Assets.xcassets */,
 				860369C51CF10B770017AA49 /* Info.plist */,
 				860369E91CF123A10017AA49 /* RestaurantsModel.swift */,
-				860369EB1CF130170017AA49 /* SearchController.swift */,
 				860369ED1CF133EA0017AA49 /* YelpSearch.swift */,
+				86A8EB521CF23E3000A9FA65 /* SearchViewController.swift */,
 			);
 			path = MyRestaurantFinderIOS;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 		BB4642586E35FD97CF284C13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA7DF71CA2D9DF17365063B2 /* libPods-MyRestaurantFinderIOS.a */,
+				0B5CDDFECB5A03183ABD3750 /* Pods_MyRestaurantFinderIOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -340,11 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A8EB531CF23E3000A9FA65 /* SearchViewController.swift in Sources */,
 				860369EA1CF123A10017AA49 /* RestaurantsModel.swift in Sources */,
 				860369BC1CF10B770017AA49 /* ViewController.swift in Sources */,
 				860369BA1CF10B770017AA49 /* AppDelegate.swift in Sources */,
 				860369EE1CF133EA0017AA49 /* YelpSearch.swift in Sources */,
-				860369EC1CF130170017AA49 /* SearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

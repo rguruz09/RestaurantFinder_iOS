@@ -8,6 +8,7 @@
 import GoogleMaps
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,7 +20,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = ViewController()
         window!.makeKeyAndVisible()
         GMSServices.provideAPIKey("AIzaSyD66jS3qwC-mhAwK6cvYqSM9_NchiYTKhA")
-        // Override point for customization after application launch.
+        var nav1 = UINavigationController()
+        var first = ViewController(nibName: nil, bundle: nil)
+        nav1.viewControllers = [first]
+        
+        var second = SearchViewController(nibName: nil, bundle: nil)
+        var nav2 = UINavigationController()
+        nav2.viewControllers = [second]
+        let tabs = UITabBarController()
+        
+        let firstImage = UIImage(named: "one.png")
+        let secondImage = UIImage(named: "pizza bar icon")
+        nav1.tabBarItem = UITabBarItem(
+            title: "Search",
+            image: firstImage,
+            tag: 1)
+        nav2.tabBarItem = UITabBarItem(
+            title: "Favorites",
+            image: secondImage,
+            tag:2)
+        tabs.viewControllers = [nav1, nav2]
+        
+        self.window!.rootViewController = tabs;
+        self.window?.makeKeyAndVisible();
+       //  Override point for customization after application launch.
         return true
     }
 

@@ -12,6 +12,8 @@ class RestaurantModel {
     // MARK: Properties
     
     var id: String
+    var rating:Int
+    
     
     init(id: String, is_claimed: Bool, is_closed: Bool, name: String,
         image_url:String, phone:String, display_phone: String,
@@ -21,6 +23,7 @@ class RestaurantModel {
         address: String, city: String, country_code: String,
         postal_code:String, state_code:String ){
             self.id = id
+            self.rating = rating
             
     }
     
