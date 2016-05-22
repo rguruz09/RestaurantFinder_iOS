@@ -5,7 +5,7 @@
 //  Created by Savani Vishnoi on 5/21/16.
 //  Copyright © 2016 Savani Vishnoi. All rights reserved.
 //
-
+import GoogleMaps
 import UIKit
 
 @UIApplicationMain
@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window!.rootViewController = ViewController()
         window!.makeKeyAndVisible()
+        GMSServices.provideAPIKey("AIzaSyD66jS3qwC-mhAwK6cvYqSM9_NchiYTKhA")
         // Override point for customization after application launch.
         return true
     }
