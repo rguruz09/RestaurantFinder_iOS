@@ -28,45 +28,33 @@ class SearchDetailsDataProvider: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer, forIndexPath: indexPath) as! restCell
         
         cell.addLabel.text = item.shrt_addr
-        
-        
-        
+   
         cell.nameLabel.text = item.name
         
+        let ct = String(item.review_count)
+        print(ct)
+        cell.viewCt.text = ct + " reviews"
         
-        var image : UIImage = UIImage(named: "/Users/shrutik/Documents/bg3.png")!
-        cell.iconImg.image = image
-        print("The loaded image: \(image)")
+        asyncLoadImg(item, imageView: cell.iconImg, url: item.image_url)
+        asyncLoadImg(item, imageView: cell.ratImg, url: item.rating_img_url)
         
-        
-//        let name = tableView.dequeueReusableCellWithIdentifier(cellIdentifer, forIndexPath: indexPath)
-//        name.textLabel?.text = item.name
-        
-//        let imgView = tableView.dequeueReusableCellWithIdentifier(cellIdentifer, forIndexPath: indexPath);
-//        load_image(item.image_url, view:imgView.imageView!)
-//
-   
         return cell
     }
     
-    func load_image(image_url_string:String, view:UIImageView)
-    {
-        
-        var image_url: NSURL = NSURL(string: image_url_string)!
-        let image_from_url_request: NSURLRequest = NSURLRequest(URL: image_url)
-        
-        NSURLConnection.sendAsynchronousRequest(
-            image_from_url_request, queue: NSOperationQueue.mainQueue(),
-            completionHandler: {(response,
-                data,
-                error) -> Void in
-                
-                if error == nil && data != nil {
-                    view.image = UIImage(data: data!)
-                }
-                
-        })
-        
-    }
     
+    func asyncLoadImg(model : RestaurantModel, imageView : UIImageView, url : String ) {
+        let dispQueue = dispatch_queue_create("com.sjsu.restaurantfinder", nil)
+        
+        dispatch_async(dispQueue){
+            let data = NSData(contentsOfURL: NSURL(string : url)!)
+            var image : UIImage?
+            if(data != nil){
+                model.imagdata = data;
+                image = UIImage(data : data!)!
+            }
+            dispatch_async(dispatch_get_main_queue()){
+                imageView.image = image
+            }
+        }
+    }
 }

@@ -11,24 +11,27 @@ import Foundation
 class RestaurantModel {
     // MARK: Properties
     
-    public var id: String
-    public var rating:Double
-    public var is_claimed: Bool
-    public var is_closed: Bool
-    public var name: String
-    public var image_url:String
-    public var phone:String
-    public var display_phone: String
-    public var review_count: Int
-    public var rating_img_url:String
-    public var snippet_text:String
-    public var snippet_image_url:String
-    public var address: String
-    public var city: String
-    public var country_code: String
-    public var postal_code:String
-    public var state_code:String
-    public var shrt_addr:String
+    var id: String
+    var rating:Double
+    var is_claimed: Bool
+    var is_closed: Bool
+    var name: String
+    var image_url:String
+    var phone:String
+    var display_phone: String
+    var review_count: Int
+    var rating_img_url:String
+    var snippet_text:String
+    var snippet_image_url:String
+    var address: String
+    var city: String
+    var country_code: String
+    var postal_code:String
+    var state_code:String
+    var shrt_addr:String
+
+    
+    var  imagdata: NSData?
     
     init( id: String
     , rating:Double
