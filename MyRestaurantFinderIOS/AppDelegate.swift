@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+//        let viewController = TableViewController()
+//        viewController.dataProvider = SearchDetailsDataProvider()
+//        window!.rootViewController = viewController
+//        window!.makeKeyAndVisible();
+        
+        window?.rootViewController = TableViewController();
+        window!.makeKeyAndVisible();
+        
         window!.rootViewController = ViewController()
         window!.makeKeyAndVisible()
         GMSServices.provideAPIKey("AIzaSyD66jS3qwC-mhAwK6cvYqSM9_NchiYTKhA")

@@ -9,10 +9,16 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-        
+    
+    var dataProvider: SearchDetailsDataProvider?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        //super.viewDidLoad()
+        
+        tableView.dataSource = dataProvider
+        dataProvider?.registerCellsForTableView(tableView)
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

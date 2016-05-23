@@ -11,35 +11,34 @@ import Foundation
 class RestaurantModel {
     // MARK: Properties
     
-    var id: String
-    var rating:Int
-    var is_claimed: Bool
-    var is_closed: Bool
-    var name: String
-    var image_url:String
-    var phone:String
-    var display_phone: String
-    var review_count: Int16
-    var categories: [String:String]
-    var rating_img_url:String
-    var snippet_text:String
-    var snippet_image_url:String
-    var address: String
-    var city: String
-    var country_code: String
-    var postal_code:String
-    var state_code:String
+    public var id: String
+    public var rating:Double
+    public var is_claimed: Bool
+    public var is_closed: Bool
+    public var name: String
+    public var image_url:String
+    public var phone:String
+    public var display_phone: String
+    public var review_count: Int
+    public var rating_img_url:String
+    public var snippet_text:String
+    public var snippet_image_url:String
+    public var address: String
+    public var city: String
+    public var country_code: String
+    public var postal_code:String
+    public var state_code:String
+    public var shrt_addr:String
     
     init( id: String
-    ,rating:Int
-    ,is_claimed: Bool
+    , rating:Double
+    , is_claimed: Bool
     , is_closed: Bool
     , name: String
     , image_url:String
     , phone:String
     , display_phone: String
-    , review_count: Int16
-    , categories: [String:String]
+    , review_count: Int
     , rating_img_url:String
     , snippet_text:String
     , snippet_image_url:String
@@ -47,9 +46,9 @@ class RestaurantModel {
     , city: String
     , country_code: String
     , postal_code:String
-    , state_code:String){
+    , state_code:String
+        , shrt_addr:String){
         self.address = address;
-        self.categories = categories;
         self.city = city;
         self.country_code = country_code;
         self.id = id;
@@ -66,7 +65,7 @@ class RestaurantModel {
         self.snippet_image_url = snippet_image_url;
         self.snippet_text = snippet_text;
         self.display_phone = display_phone;
-        
+        self.shrt_addr = shrt_addr;
     }
     
 }
